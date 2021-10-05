@@ -1,0 +1,85 @@
+/* Pc */
+
+@media (min-width: 1024px) {
+  #header {
+  }
+  #nav .subnav {
+    position: absolute;
+  }
+}
+
+/* table*/
+@media (max-width: 1023px) and (min-width: 740px) {
+  #nav .subnav {
+    position: absolute;
+  }
+}
+@media (max-width: 1023px) {
+  .socials-list > a {
+    padding: 0px 5px;
+  }
+  .socials-list > a > i {
+    font-size: 28px;
+  }
+  .hello {
+    font-size: 28px;
+  }
+  g {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+/* mobie */
+@media (max-width: 739px) {
+  #nav > li {
+    display: block;
+  }
+  #header {
+    overflow: hidden;
+  }
+  .search-btn {
+    display: none;
+  }
+  #nav {
+    display: block;
+  }
+  #header .mobie-menu-btn {
+    display: block;
+  }
+  #nav li:first-child {
+    display: inline-block;
+  }
+  #nav .subnav {
+    background-color: #333;
+  }
+  #nav .subnav a {
+    color: white;
+  }
+  .subnav a {
+    color: black;
+    line-height: 38px;
+    padding: 5px 41px;
+  }
+
+  .s-col-full {
+    width: 100%;
+  }
+  .form-control {
+    width: 210%;
+  }
+  .contact-form {
+    margin-top: 16px;
+  }
+  .s-mt-8 {
+    margin-top: 8px;
+  }
+  .form-submit-btn {
+    width: 207%;
+    float: none;
+  }
+  .place-buy-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.text-center {
+  text-align: center !important;
+}
+.clear {
+  clear: both;
+}
+.text-white {
+  color: whitesmoke;
+}
+.row {
+  margin: 0 -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding: 0 8px;
+}
+.col-half {
+  width: 50%;
+}
+.col-full {
+  width: 100%;
+}
+.col-third {
+  width: 33.33333%;
+}
+li {
+  list-style-type: none;
+}
+#header {
+  background-color: black;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+#nav {
+  display: inline-block;
+}
+#nav .subnav {
+  display: none;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 2px 2px 10px gray;
+  overflow: hidden;
+}
+
+#nav > li > a {
+  color: white;
+}
+#nav > li > a {
+  line-height: 46px;
+  padding: 0 24px;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav > li:hover > a {
+  background-color: #ccc;
+  color: white;
+  display: block;
+}
+#nav .subnav li:hover {
+  background-color: #ccc;
+  line-height: 36px;
+  display: block;
+}
+.subnav a {
+  color: black;
+  line-height: 38px;
+  padding: 0 21px;
+}
+/*icon*/
+#header .mobie-menu-btn,
+#header .search-btn {
+  float: right;
+  line-height: 46px;
+  padding: 0 21px;
+}
+#header .mobie-menu-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+#header .mobie-menu-btn:hover {
+  background-color: #ccc;
+}
+#header .search-btn:hover {
+  background-color: #f44336;
+}
+.search-icon {
+  color: white;
+}
+.menu-icon {
+  color: white;
+}
+/*icon*/
+#slider {
+  background-image: url(../img/chicago.jpeg);
+  padding-top: 50%;
+  margin-top: 46px;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+}
+.text-heading {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-shadow: 0 1px 1px #ccc;
+}
+.text-description {
+  font-size: 16px;
+  text-shadow: 0 1px 1px #000;
+}
+#content .content-section {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 64px 16px;
+  max-width: 100%;
+}
+.section-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.section-sub-heading {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+.about-text {
+  margin-top: 25px;
+  text-align: justify;
+  line-height: 22.5px;
+}
+#content .member-list {
+  margin-top: 32px;
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+#content .member-img {
+  width: 60%;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.tour-section {
+  background-color: #000;
+}
+.ticket-list {
+  margin-top: 25px;
+}
+.ticket-list li {
+  color: gray;
+  background-color: #fff;
+  font-size: 15px;
+  padding: 11px 15px;
+  border-bottom: solid 1px #ddd;
+}
+.sold-out {
+  background-color: #f44336;
+  color: white;
+  padding: 3px 4px;
+  margin-left: 11px;
+}
+.quantity {
+  background-color: #000;
+  color: white;
+  float: right;
+  padding: 5px;
+  border-radius: 50%;
+  margin-top: -4px;
+}
+
+/*place*/
+.place-list {
+  margin-top: 16px;
+  padding-bottom: 48px;
+}
+
+.place-img {
+  width: 100%;
+  display: block;
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-body {
+  background-color: #fff;
+  padding: 16px 16px;
+  font-size: 15px;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+.place-time {
+  margin-top: 15px;
+}
+.place-desc {
+  margin-top: 15px;
+  opacity: 0.6;
+  line-height: 1.4;
+}
+.place-buy-btn {
+  color: honeydew;
+  background-color: #000;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 25px;
+}
+.place-buy-btn:hover {
+  opacity: 0.6;
+}
+/*contact-from*/
+.contact-content {
+  margin-top: 46px;
+}
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+.contact-info a {
+  color: rgb(210, 180, 165);
+}
+.form-control {
+  padding: 8px;
+}
+.contact-form {
+  font-size: 15px;
+}
+.form-control {
+  padding: 10px;
+  border: solid 1px #ccc;
+  width: 100%;
+}
+.form-submit-btn {
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  width: 71px;
+  height: 38px;
+  float: right;
+}
+.form-submit-btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+.map-section img {
+  width: 100%;
+  filter: grayscale(50%);
+}
+#footer {
+  text-align: center;
+  padding: 64px 16px;
+}
+.socials-list {
+  margin-bottom: 16px;
+}
+.socials-list i {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+.hello {
+  color: rgba(0, 0, 0, 0.6);
+}
+.hello a {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+}

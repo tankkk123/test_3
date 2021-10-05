@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.clear {
+  clear: bot;
+}
+li {
+  list-style-type: none;
+}
+#header {
+  background-color: #000;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 2px 2px 10px gray;
+}
+#nav > li > a {
+  color: white;
+}
+#nav li a {
+  line-height: 46px;
+  padding: 0 24px;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav > li:hover > a {
+  background-color: #ccc;
+  color: white;
+  display: block;
+  color: black;
+}
+#nav .subnav li:hover {
+  background-color: #ccc;
+  line-height: 36px;
+  display: block;
+}
+.subnav li a {
+  color: black;
+}
+.search {
+  color: white;
+  position: absolute;
+  right: 0;
+  padding: 15px;
+}
+.search:hover {
+  background-color: red;
+}
+#slider {
+  background-image: url(/assets/img/chicago.jpeg);
+  padding-top: 50%;
+  margin-top: 46px;
+  position: relative;
+  background-size: 100%;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+}
+.text-heading {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.text-description {
+  font-size: 16px;
+}
+#content .content-section {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 64px 0;
+}
+.section-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.section-sub-heading {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+.about-text {
+  margin-top: 25px;
+  text-align: justify;
+  line-height: 22.5px;
+}
+#content .member-list {
+  margin-top: 47px;
+}
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+  overflow: hidden;
+}
+#content .member-name {
+  font-size: 15px;
+}
+#content .member-img {
+  margin-top: 15px;
+  width: 154px;
+  border-radius: 4px;
+}
